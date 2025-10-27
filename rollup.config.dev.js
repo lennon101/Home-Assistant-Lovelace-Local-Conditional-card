@@ -4,9 +4,9 @@ import babel from 'rollup-plugin-babel';
 import serve from 'rollup-plugin-serve';
 import { terser } from 'rollup-plugin-terser';
 import json from '@rollup/plugin-json';
-import ignore from './rollup-plugins/ignore';
-import { ignoreTextfieldFiles } from './elements/ignore/textfield';
-import { ignoreSwitchFiles } from './elements/ignore/switch';
+// import ignore from './rollup-plugins/ignore';
+// import { ignoreTextfieldFiles } from './elements/ignore/textfield';
+// import { ignoreSwitchFiles } from './elements/ignore/switch';
 
 export default {
   input: ['src/local-conditional-card.ts'],
@@ -32,8 +32,8 @@ export default {
         'Access-Control-Allow-Origin': '*',
       },
     }),
-    ignore({
-      files: [...ignoreTextfieldFiles, ...ignoreSwitchFiles].map((file) => require.resolve(file)),
-    }),
+    // ignore({
+    //   files: [...ignoreTextfieldFiles, ...ignoreSwitchFiles].map((file) => require.resolve(file)),
+    // }),
   ],
 };

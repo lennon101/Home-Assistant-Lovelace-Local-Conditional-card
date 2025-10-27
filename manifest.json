@@ -1,0 +1,9 @@
+{
+  "name": "Local Conditional Card",
+  "type": "module",
+  "main": "dist/local-conditional-card.js",
+  "version": "1.0.0",
+  "description": "A conditional card for Lovelace",
+  "documentation": "https://github.com/lennon101/Home-Assistant-Lovelace-Local-Conditional-card",
+  "author": "Dane Lennon"
+}
